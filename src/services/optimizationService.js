@@ -6,34 +6,58 @@ const { v4: uuidv4 } = require('uuid');
 class OptimizationService {
   async createOptimization(data) {
     try {
-      // Ensure project exists
+      logger.info('Creating optimization with data:', data);
+      
+      // First, find the project by gitlabProjectId
       let project = await Project.findOne({
         where: { gitlabProjectId: data.projectId }
       });
       
       if (!project) {
+        logger.info(`Project ${data.projectId} not found, creating it...`);
+        
+        // Create the project with both gitlabProjectId and internal ID
         project = await Project.create({
           id: uuidv4(),
           gitlabProjectId: data.projectId,
-          name: data.projectName || `Project-${data.projectId}`
+          name: data.projectName || data.projectId,
+          description: data.projectDescription || `Auto-created for project ${data.projectId}`,
+          settings: {}
         });
+        
+        logger.info(`Project ${data.projectId} created automatically with ID: ${project.id}`);
       }
 
-      const optimization = await Optimization.create({
+      // Now create the optimization using the project's internal ID (project.id)
+      const optimizationData = {
         title: data.title,
         description: data.description,
-        projectId: data.projectId,
+        projectId: project.id,  // This is the internal UUID, not the gitlabProjectId
         type: data.type || 'general',
         impact: data.impact || 'medium',
         estimatedSavings: data.estimatedSavings || 0,
         status: data.status || 'pending',
         metadata: data.metadata || {}
-      });
+      };
+      
+      logger.info('Creating optimization with data:', optimizationData);
+      
+      const optimization = await Optimization.create(optimizationData);
 
-      logger.info('Optimization created', { id: optimization.id });
-      return optimization;
+      logger.info('Optimization created successfully', { 
+        id: optimization.id, 
+        projectId: data.projectId,
+        internalProjectId: project.id 
+      });
+      
+      // Return the optimization with both IDs for clarity
+      const result = optimization.toJSON();
+      result.gitlabProjectId = project.gitlabProjectId;
+      result.projectName = project.name;
+      
+      return result;
     } catch (error) {
-      logger.error('Error creating optimization', { error });
+      logger.error('Error creating optimization', { error: error.message, stack: error.stack, data });
       throw error;
     }
   }
@@ -41,26 +65,57 @@ class OptimizationService {
   async getOptimizations(filters = {}) {
     try {
       const where = {};
+      const include = [{
+        model: Project,
+        as: 'Project',
+        attributes: ['id', 'gitlabProjectId', 'name']
+      }];
       
       if (filters.status) {
         where.status = filters.status;
-      }
-      
-      if (filters.projectId) {
-        where.projectId = filters.projectId;
       }
       
       if (filters.impact) {
         where.impact = filters.impact;
       }
 
+      // Handle projectId filter - it could be gitlabProjectId or internal ID
+      if (filters.projectId) {
+        // Try to find the project first
+        const project = await Project.findOne({
+          where: {
+            [Op.or]: [
+              { id: filters.projectId },
+              { gitlabProjectId: filters.projectId }
+            ]
+          }
+        });
+        
+        if (project) {
+          where.projectId = project.id;
+        } else {
+          // No matching project, return empty array
+          return [];
+        }
+      }
+
       const optimizations = await Optimization.findAll({
         where,
+        include,
         order: [['createdAt', 'DESC']],
         limit: filters.limit || 100
       });
 
-      return optimizations;
+      // Transform the response to include gitlabProjectId at the top level
+      return optimizations.map(opt => {
+        const optJson = opt.toJSON();
+        if (optJson.Project) {
+          optJson.gitlabProjectId = optJson.Project.gitlabProjectId;
+          optJson.projectName = optJson.Project.name;
+          delete optJson.Project;
+        }
+        return optJson;
+      });
     } catch (error) {
       logger.error('Error fetching optimizations', { error });
       throw error;
@@ -69,8 +124,25 @@ class OptimizationService {
 
   async getOptimizationById(id) {
     try {
-      const optimization = await Optimization.findByPk(id);
-      return optimization;
+      const optimization = await Optimization.findByPk(id, {
+        include: [{
+          model: Project,
+          as: 'Project',
+          attributes: ['id', 'gitlabProjectId', 'name']
+        }]
+      });
+      
+      if (!optimization) return null;
+      
+      // Transform the response
+      const result = optimization.toJSON();
+      if (result.Project) {
+        result.gitlabProjectId = result.Project.gitlabProjectId;
+        result.projectName = result.Project.name;
+        delete result.Project;
+      }
+      
+      return result;
     } catch (error) {
       logger.error('Error fetching optimization', { error });
       throw error;
@@ -102,7 +174,7 @@ class OptimizationService {
       await optimization.save();
       
       logger.info('Optimization status updated', { id, status });
-      return optimization;
+      return this.getOptimizationById(id);
     } catch (error) {
       logger.error('Error updating optimization', { error });
       throw error;
@@ -111,7 +183,12 @@ class OptimizationService {
 
   async applyOptimization(id) {
     try {
-      const optimization = await Optimization.findByPk(id);
+      const optimization = await Optimization.findByPk(id, {
+        include: [{
+          model: Project,
+          as: 'Project'
+        }]
+      });
       
       if (!optimization) {
         throw new Error('Optimization not found');
@@ -121,13 +198,13 @@ class OptimizationService {
       optimization.status = 'in_progress';
       optimization.appliedAt = new Date();
       
-      // Generate MR URL (in real implementation, this would call GitLab API)
-      const mrUrl = `https://gitlab.com/${optimization.projectId}/merge_requests/${Date.now()}`;
+      // Generate MR URL using gitlabProjectId
+      const mrUrl = `https://gitlab.com/${optimization.Project.gitlabProjectId}/merge_requests/${Date.now()}`;
       optimization.mrUrl = mrUrl;
       
       await optimization.save();
       
-      // Simulate completion after 5 seconds (in real implementation, this would be async)
+      // Simulate completion after 5 seconds
       setTimeout(async () => {
         try {
           optimization.status = 'completed';
@@ -139,7 +216,7 @@ class OptimizationService {
         }
       }, 5000);
 
-      return optimization;
+      return this.getOptimizationById(id);
     } catch (error) {
       logger.error('Error applying optimization', { error });
       throw error;
@@ -158,13 +235,29 @@ class OptimizationService {
         where: { status: 'completed' }
       });
 
+      // Get top projects by savings
+      const [results] = await Optimization.sequelize.query(`
+        SELECT 
+          p.gitlab_project_id as projectId,
+          p.name as projectName,
+          SUM(o.estimated_savings) as totalSavings,
+          COUNT(o.id) as optimizationCount
+        FROM optimizations o
+        JOIN projects p ON p.id = o.project_id
+        WHERE o.status = 'completed'
+        GROUP BY p.id, p.gitlab_project_id, p.name
+        ORDER BY totalSavings DESC
+        LIMIT 5
+      `);
+
       return {
         total,
         pending,
         inProgress,
         completed,
         failed,
-        totalSavings: totalSavings || 0
+        totalSavings: totalSavings || 0,
+        topProjects: results || []
       };
     } catch (error) {
       logger.error('Error fetching optimization stats', { error });

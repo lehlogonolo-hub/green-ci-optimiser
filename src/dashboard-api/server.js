@@ -11,6 +11,7 @@ const path = require('path');
 const metricsRouter = require('./routes/metrics');
 const optimizationsRouter = require('./routes/optimizations');
 const agentsRouter = require('./routes/agents');
+const projectsRouter = require('./routes/projects');
 
 // Import middleware
 const authMiddleware = require('./middleware/auth');
@@ -63,6 +64,7 @@ app.use('/api/', (req, res, next) => {
 app.use('/api/metrics', metricsRouter);
 app.use('/api/optimizations', optimizationsRouter);
 app.use('/api/agents', agentsRouter);
+app.use('/api/projects', projectsRouter);
 
 // Health check
 app.get('/api/health', (req, res) => {

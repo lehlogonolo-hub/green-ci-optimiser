@@ -1,41 +1,82 @@
-# Green CI Main Agent
+# Green CI Main Agent - Production Version
 name: green-ci-optimizer
-version: 1.0.0
-description: Analyzes pipeline carbon footprint and creates optimization MRs
+version: 2.0.0
+description: Enterprise-grade CI/CD sustainability optimizer
 
 triggers:
-  - pipeline_completed
-  - schedule: "0 9 * * 1"  # Weekly report every Monday
+  - pipeline_completed:
+      filter: |
+        pipeline.duration > 300 && 
+        pipeline.status == "success"
+  - schedule: "0 */6 * * *"  # Every 6 hours
   - webhook:
       path: /webhooks/green-ci
       method: POST
+      secret: ${{ secrets.WEBHOOK_SECRET }}
 
 permissions:
   - read_api
   - write_repository
   - create_merge_request
+  - read_terraform_state
+  - admin_merge_request
 
 ai_model:
   provider: anthropic
-  model: claude-3-sonnet-20241022
-  temperature: 0.2
-  max_tokens: 2000
+  model: claude-3-opus-20240229
+  temperature: 0.1  # Lower for more deterministic outputs
+  max_tokens: 4000
+  system_prompt: |
+    You are a sustainability expert analyzing CI/CD pipelines.
+    Focus on actionable optimizations that reduce carbon footprint.
+    Always provide quantitative impact estimates.
+
+variables:
+  log_level: INFO
+  max_optimizations_per_run: 5
+  min_savings_threshold: 0.01  # kg CO2
 
 actions:
   - name: analyze_pipeline
     run: node /opt/green-ci/scripts/run-pipeline-analysis.js
+    timeout: 300  # 5 minutes
+    retry:
+      max_attempts: 3
+      backoff: exponential
     env:
       GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
       DASHBOARD_URL: ${{ secrets.DASHBOARD_URL }}
+      GCP_CREDENTIALS: ${{ secrets.GCP_CREDENTIALS }}
       
   - name: create_optimization_mr
-    condition: $analysis.optimizations.length > 0
+    condition: analysis.optimizations.length > 0 && analysis.total_savings > variables.min_savings_threshold
     run: node /opt/green-ci/scripts/create-optimization-mr.js
+    timeout: 120
     env:
       OPTIMIZATION_DATA: $analysis.optimizations
+      TOTAL_SAVINGS: $analysis.total_savings
       
-  - name: post_to_dashboard
+  - name: notify_team
+    condition: analysis.optimizations.length > 0
+    run: node /opt/green-ci/scripts/post-to-slack.js
+    env:
+      SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      CHANNEL: "#green-ci-updates"
+      
+  - name: store_metrics
     run: node /opt/green-ci/scripts/post-to-dashboard.js
     env:
       METRICS: $analysis.metrics
       TIMESTAMP: $pipeline.completed_at
+
+monitoring:
+  metrics:
+    - name: analysis_duration
+      type: histogram
+    - name: optimizations_found
+      type: counter
+    - name: mrs_created
+      type: counter
+  alerts:
+    - condition: error_rate > 0.05
+      action: notify_admin

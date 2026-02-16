@@ -1,23 +1,64 @@
-name: green-ci-pipeline-flow
-description: End-to-end pipeline optimization flow
+name: green-ci-complete-flow
+description: Complete pipeline optimization workflow with fallbacks
 
-version: 1.0.0
+version: 2.0.0
 owner: green-ci-team
+oncall: "@platform-engineering"
 
 triggers:
   - event: pipeline_completed
     filter:
-      - $pipeline.status == "success"
-      - $pipeline.duration > 300  # Only analyze pipelines > 5 min
+      - pipeline.status == "success"
+      - pipeline.duration > 300
+      - pipeline.ref == "main" or pipeline.ref == "production"
+
+error_handling:
+  on_failure:
+    - retry:
+        max_attempts: 2
+        delay: 30
+    - fallback:
+        - agent: green-ci-sentinel
+          action: log_failure
+        - notify:
+            channel: "#green-ci-alerts"
+            message: "Pipeline analysis failed for !$pipeline.id"
 
 steps:
+  - id: validate_pipeline
+    agent: green-ci-sentinel
+    action: validate_pipeline_data
+    with:
+      pipeline_id: $pipeline.id
+      required_fields:
+        - duration
+        - jobs
+        - status
+
   - id: analyze
     agent: green-ci-optimizer
     action: analyze_pipeline
     with:
       pipeline_id: $pipeline.id
       project_id: $pipeline.project_id
-      
+      deep_scan: $pipeline.ref == "main"
+    timeout: 300
+    
+  - id: parallel_actions
+    parallel:
+      - id: store_in_gcp
+        agent: green-ci-sentinel
+        action: store_metrics
+        with:
+          data: $steps.analyze.output.metrics
+          destination: bigquery
+          
+      - id: update_dashboard
+        agent: green-ci-sentinel
+        action: post_to_dashboard
+        with:
+          metrics: $steps.analyze.output.metrics
+          
   - id: check_optimizations
     condition: $steps.analyze.output.has_optimizations
     then:
@@ -27,24 +68,25 @@ steps:
         with:
           optimizations: $steps.analyze.output.optimizations
           branch_prefix: "green-ci/opt"
+          target_branch: $pipeline.ref
           
-      - id: notify_team
+      - id: notify
         agent: green-ci-advisor
         action: send_notification
         with:
           channel: "#green-ci-updates"
-          message: "🤖 Created MR !$steps.create_mr.output.mr_iid with optimizations"
+          message: |
+            🤖 **Green CI detected $steps.analyze.output.optimizations.length optimizations!**
+            
+            Estimated Savings: $steps.analyze.output.total_savings kg CO2/run
+            MR: !$steps.create_mr.output.mr_iid
+            
+            This would reduce your pipeline carbon footprint by 
+            {{ $steps.analyze.output.total_savings * 365 }} kg CO2 annually!
           
-  - id: update_dashboard
-    agent: green-ci-sentinel
-    action: post_to_dashboard
+  - id: generate_insights
+    agent: green-ci-advisor
+    action: generate_insights
     with:
       metrics: $steps.analyze.output.metrics
-      
-  - id: store_in_bigquery
-    condition: $env.GOOGLE_APPLICATION_CREDENTIALS != ""
-    agent: green-ci-sentinel
-    action: store_metrics
-    with:
-      data: $steps.analyze.output.metrics
-      destination: bigquery
+      historical_data: true

@@ -1,0 +1,21 @@
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-16T11:24:02.295Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-16T11:24:02.297Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-16T11:24:02.298Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-16T11:24:13.871Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-16T11:24:13.873Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-16T11:24:13.873Z"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-16T11:24:38.753Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /favicon.ico","timestamp":"2026-02-16T11:24:39.468Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T11:24:54.797Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"warn","message":"Missing API key","path":"/metrics","timestamp":"2026-02-16T11:24:54.799Z"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T11:25:50.960Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"warn","message":"Missing API key","path":"/optimizations","timestamp":"2026-02-16T11:25:50.961Z"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-16T11:26:00.792Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"warn","message":"Missing API key","path":"/agents","timestamp":"2026-02-16T11:26:00.793Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-16T11:31:10.865Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-16T11:31:10.867Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-16T11:31:10.867Z"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-16T11:31:18.696Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"warn","message":"Missing API key","path":"/agents","timestamp":"2026-02-16T11:31:18.713Z"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-16T11:35:28.129Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"warn","message":"Missing API key","path":"/agents","timestamp":"2026-02-16T11:35:28.131Z"}

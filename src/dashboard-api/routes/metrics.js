@@ -1,153 +1,149 @@
 const express = require('express');
 const router = express.Router();
+const metricsService = require('../../services/metricsService');
 const logger = require('../../utils/logger');
 
-// Mock data for demonstration
-let mockMetrics = [
-  {
-    id: '1',
-    projectId: 'frontend-web',
-    timestamp: new Date().toISOString(),
-    duration: 1245,
-    co2kg: 0.082,
-    energyKwh: 0.173,
-    ecoScore: 78,
-    grade: 'B'
-  },
-  {
-    id: '2',
-    projectId: 'backend-api',
-    timestamp: new Date(Date.now() - 3600000).toISOString(),
-    duration: 2340,
-    co2kg: 0.154,
-    energyKwh: 0.324,
-    ecoScore: 62,
-    grade: 'D'
-  },
-  {
-    id: '3',
-    projectId: 'data-pipeline',
-    timestamp: new Date(Date.now() - 7200000).toISOString(),
-    duration: 3560,
-    co2kg: 0.235,
-    energyKwh: 0.495,
-    ecoScore: 45,
-    grade: 'F'
-  }
-];
-
-// Get all metrics
-router.get('/', (req, res) => {
+// Get all metrics with filters
+router.get('/', async (req, res) => {
   try {
-    logger.info('Fetching all metrics');
+    const { projectId, startDate, endDate, limit } = req.query;
+    
+    const filters = {};
+    if (projectId) filters.projectId = projectId;
+    if (startDate && endDate) {
+      filters.startDate = new Date(startDate);
+      filters.endDate = new Date(endDate);
+    }
+    if (limit) filters.limit = parseInt(limit);
+
+    const metrics = await metricsService.getMetrics(filters);
+    
     res.json({
       success: true,
-      data: mockMetrics,
+      data: metrics,
+      count: metrics.length,
       timestamp: new Date().toISOString()
     });
   } catch (error) {
     logger.error('Error fetching metrics', { error });
-    res.status(500).json({ error: 'Failed to fetch metrics' });
+    res.status(500).json({ 
+      success: false,
+      error: 'Failed to fetch metrics',
+      message: error.message 
+    });
   }
 });
 
 // Get metrics by project
-router.get('/project/:projectId', (req, res) => {
+router.get('/project/:projectId', async (req, res) => {
   try {
     const { projectId } = req.params;
-    const projectMetrics = mockMetrics.filter(m => m.projectId === projectId);
+    const { days = 30 } = req.query;
     
-    logger.info(`Fetching metrics for project ${projectId}`);
+    const metrics = await metricsService.getMetricsByProject(projectId, parseInt(days));
+    
     res.json({
       success: true,
-      data: projectMetrics,
+      data: metrics,
+      count: metrics.length,
       timestamp: new Date().toISOString()
     });
   } catch (error) {
     logger.error('Error fetching project metrics', { error });
-    res.status(500).json({ error: 'Failed to fetch project metrics' });
+    res.status(500).json({ 
+      success: false,
+      error: 'Failed to fetch project metrics',
+      message: error.message 
+    });
   }
 });
 
 // Get metrics by date range
-router.get('/range', (req, res) => {
+router.get('/range', async (req, res) => {
   try {
     const { startDate, endDate } = req.query;
     
-    // Filter metrics within date range
-    const filtered = mockMetrics.filter(m => {
-      const metricDate = new Date(m.timestamp);
-      return metricDate >= new Date(startDate) && metricDate <= new Date(endDate);
+    if (!startDate || !endDate) {
+      return res.status(400).json({ 
+        success: false,
+        error: 'startDate and endDate are required' 
+      });
+    }
+
+    const metrics = await metricsService.getMetrics({
+      startDate: new Date(startDate),
+      endDate: new Date(endDate)
     });
     
     res.json({
       success: true,
-      data: filtered,
-      count: filtered.length,
+      data: metrics,
+      count: metrics.length,
       timestamp: new Date().toISOString()
     });
   } catch (error) {
     logger.error('Error fetching metrics by range', { error });
-    res.status(500).json({ error: 'Failed to fetch metrics by range' });
+    res.status(500).json({ 
+      success: false,
+      error: 'Failed to fetch metrics by range',
+      message: error.message 
+    });
   }
 });
 
 // Get summary statistics
-router.get('/summary', (req, res) => {
+router.get('/summary', async (req, res) => {
   try {
-    const totalCO2 = mockMetrics.reduce((sum, m) => sum + m.co2kg, 0);
-    const avgScore = mockMetrics.reduce((sum, m) => sum + m.ecoScore, 0) / mockMetrics.length;
-    const totalEnergy = mockMetrics.reduce((sum, m) => sum + m.energyKwh, 0);
+    const summary = await metricsService.getSummary();
     
     res.json({
       success: true,
-      data: {
-        totalPipelines: mockMetrics.length,
-        totalCO2: Number(totalCO2.toFixed(3)),
-        averageScore: Math.round(avgScore),
-        totalEnergy: Number(totalEnergy.toFixed(3)),
-        projects: [...new Set(mockMetrics.map(m => m.projectId))].length
-      },
+      data: summary,
       timestamp: new Date().toISOString()
     });
   } catch (error) {
     logger.error('Error fetching summary', { error });
-    res.status(500).json({ error: 'Failed to fetch summary' });
+    res.status(500).json({ 
+      success: false,
+      error: 'Failed to fetch summary',
+      message: error.message 
+    });
   }
 });
 
 // Post new metric (for agent webhook)
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   try {
-    const newMetric = {
-      id: String(mockMetrics.length + 1),
-      ...req.body,
-      timestamp: new Date().toISOString()
-    };
+    const metric = await metricsService.createMetric(req.body);
     
-    mockMetrics.push(newMetric);
-    logger.info('New metric added', { id: newMetric.id });
+    logger.info('New metric added', { id: metric.id });
     
     res.status(201).json({
       success: true,
-      data: newMetric,
+      data: metric,
       message: 'Metric added successfully'
     });
   } catch (error) {
     logger.error('Error adding metric', { error });
-    res.status(500).json({ error: 'Failed to add metric' });
+    res.status(500).json({ 
+      success: false,
+      error: 'Failed to add metric',
+      message: error.message 
+    });
   }
 });
 
 // Delete metric
-router.delete('/:id', (req, res) => {
+router.delete('/:id', async (req, res) => {
   try {
     const { id } = req.params;
-    const initialLength = mockMetrics.length;
-    mockMetrics = mockMetrics.filter(m => m.id !== id);
+    const deleted = await metricsService.deleteMetric(id);
     
-    if (mockMetrics.length === initialLength) {
-      return res.status(404).json({ error: 'Metric not found' });
+    if (!deleted) {
+      return res.status(404).json({ 
+        success: false,
+        error: 'Metric not found' 
+      });
     }
     
     logger.info(`Metric ${id} deleted`);
@@ -157,7 +153,11 @@ router.delete('/:id', (req, res) => {
     });
   } catch (error) {
     logger.error('Error deleting metric', { error });
-    res.status(500).json({ error: 'Failed to delete metric' });
+    res.status(500).json({ 
+      success: false,
+      error: 'Failed to delete metric',
+      message: error.message 
+    });
   }
 });
 

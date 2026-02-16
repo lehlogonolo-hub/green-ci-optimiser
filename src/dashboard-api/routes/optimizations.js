@@ -1,131 +1,114 @@
 const express = require('express');
 const router = express.Router();
+const optimizationService = require('../../services/optimizationService');
 const logger = require('../../utils/logger');
 
-let mockOptimizations = [
-  {
-    id: 'opt-1',
-    title: 'Enable Dependency Caching',
-    description: 'Add caching for node_modules to reduce build time',
-    projectId: 'frontend-web',
-    impact: 'high',
-    estimatedSavings: 0.045,
-    status: 'pending',
-    createdAt: new Date(Date.now() - 86400000).toISOString(),
-    mrUrl: null
-  },
-  {
-    id: 'opt-2',
-    title: 'Consolidate Test Jobs',
-    description: 'Merge 12 parallel test jobs into 4 to reduce overhead',
-    projectId: 'backend-api',
-    impact: 'medium',
-    estimatedSavings: 0.021,
-    status: 'in_progress',
-    createdAt: new Date(Date.now() - 172800000).toISOString(),
-    mrUrl: 'https://gitlab.com/backend-api/merge_requests/123'
-  },
-  {
-    id: 'opt-3',
-    title: 'Use Alpine Base Images',
-    description: 'Switch from node:20 to node:20-alpine for smaller containers',
-    projectId: 'data-pipeline',
-    impact: 'low',
-    estimatedSavings: 0.008,
-    status: 'completed',
-    createdAt: new Date(Date.now() - 259200000).toISOString(),
-    completedAt: new Date(Date.now() - 172800000).toISOString(),
-    mrUrl: 'https://gitlab.com/data-pipeline/merge_requests/456'
-  }
-];
-
-// Get all optimizations
-router.get('/', (req, res) => {
+// Get all optimizations with filters
+router.get('/', async (req, res) => {
   try {
-    const { status, projectId } = req.query;
-    let filtered = [...mockOptimizations];
+    const { status, projectId, impact, limit } = req.query;
     
-    if (status) {
-      filtered = filtered.filter(o => o.status === status);
-    }
-    
-    if (projectId) {
-      filtered = filtered.filter(o => o.projectId === projectId);
-    }
+    const filters = {};
+    if (status) filters.status = status;
+    if (projectId) filters.projectId = projectId;
+    if (impact) filters.impact = impact;
+    if (limit) filters.limit = parseInt(limit);
+
+    const optimizations = await optimizationService.getOptimizations(filters);
     
     res.json({
       success: true,
-      data: filtered,
-      count: filtered.length,
+      data: optimizations,
+      count: optimizations.length,
       timestamp: new Date().toISOString()
     });
   } catch (error) {
     logger.error('Error fetching optimizations', { error });
-    res.status(500).json({ error: 'Failed to fetch optimizations' });
+    res.status(500).json({ 
+      success: false,
+      error: 'Failed to fetch optimizations',
+      message: error.message 
+    });
   }
 });
 
 // Get optimization by ID
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
   try {
     const { id } = req.params;
-    const optimization = mockOptimizations.find(o => o.id === id);
+    const optimization = await optimizationService.getOptimizationById(id);
     
     if (!optimization) {
-      return res.status(404).json({ error: 'Optimization not found' });
+      return res.status(404).json({ 
+        success: false,
+        error: 'Optimization not found' 
+      });
     }
     
     res.json({
       success: true,
-      data: optimization
+      data: optimization,
+      timestamp: new Date().toISOString()
     });
   } catch (error) {
     logger.error('Error fetching optimization', { error });
-    res.status(500).json({ error: 'Failed to fetch optimization' });
+    res.status(500).json({ 
+      success: false,
+      error: 'Failed to fetch optimization',
+      message: error.message 
+    });
+  }
+});
+
+// Get optimization stats
+router.get('/stats/summary', async (req, res) => {
+  try {
+    const stats = await optimizationService.getStats();
+    
+    res.json({
+      success: true,
+      data: stats,
+      timestamp: new Date().toISOString()
+    });
+  } catch (error) {
+    logger.error('Error fetching stats', { error });
+    res.status(500).json({ 
+      success: false,
+      error: 'Failed to fetch stats',
+      message: error.message 
+    });
   }
 });
 
 // Create new optimization
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   try {
-    const newOptimization = {
-      id: `opt-${Date.now()}`,
-      ...req.body,
-      status: 'pending',
-      createdAt: new Date().toISOString(),
-      mrUrl: null
-    };
+    const optimization = await optimizationService.createOptimization(req.body);
     
-    mockOptimizations.push(newOptimization);
-    logger.info('New optimization created', { id: newOptimization.id });
+    logger.info('New optimization created', { id: optimization.id });
     
     res.status(201).json({
       success: true,
-      data: newOptimization,
+      data: optimization,
       message: 'Optimization created successfully'
     });
   } catch (error) {
     logger.error('Error creating optimization', { error });
-    res.status(500).json({ error: 'Failed to create optimization' });
+    res.status(500).json({ 
+      success: false,
+      error: 'Failed to create optimization',
+      message: error.message 
+    });
   }
 });
 
 // Update optimization status
-router.patch('/:id/status', (req, res) => {
+router.patch('/:id/status', async (req, res) => {
   try {
     const { id } = req.params;
     const { status, mrUrl } = req.body;
     
-    const optimization = mockOptimizations.find(o => o.id === id);
-    if (!optimization) {
-      return res.status(404).json({ error: 'Optimization not found' });
-    }
-    
-    optimization.status = status;
-    if (mrUrl) optimization.mrUrl = mrUrl;
-    if (status === 'completed') {
-      optimization.completedAt = new Date().toISOString();
-    }
+    const optimization = await optimizationService.updateOptimizationStatus(id, status, mrUrl);
     
     logger.info(`Optimization ${id} status updated to ${status}`);
     
@@ -136,23 +119,20 @@ router.patch('/:id/status', (req, res) => {
     });
   } catch (error) {
     logger.error('Error updating optimization', { error });
-    res.status(500).json({ error: 'Failed to update optimization' });
+    res.status(500).json({ 
+      success: false,
+      error: 'Failed to update optimization',
+      message: error.message 
+    });
   }
 });
 
 // Apply optimization (trigger MR creation)
-router.post('/:id/apply', (req, res) => {
+router.post('/:id/apply', async (req, res) => {
   try {
     const { id } = req.params;
-    const optimization = mockOptimizations.find(o => o.id === id);
     
-    if (!optimization) {
-      return res.status(404).json({ error: 'Optimization not found' });
-    }
-    
-    // Simulate MR creation
-    optimization.status = 'in_progress';
-    optimization.mrUrl = `https://gitlab.com/${optimization.projectId}/merge_requests/${Date.now()}`;
+    const optimization = await optimizationService.applyOptimization(id);
     
     logger.info(`Optimization ${id} applied, MR created`);
     
@@ -164,7 +144,11 @@ router.post('/:id/apply', (req, res) => {
     });
   } catch (error) {
     logger.error('Error applying optimization', { error });
-    res.status(500).json({ error: 'Failed to apply optimization' });
+    res.status(500).json({ 
+      success: false,
+      error: 'Failed to apply optimization',
+      message: error.message 
+    });
   }
 });
 

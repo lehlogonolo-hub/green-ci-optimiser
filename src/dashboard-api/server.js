@@ -86,7 +86,7 @@ app.get('/', (req, res) => {
       agents: '/api/agents',
       health: '/api/health'
     },
-    documentation: 'https://github.com/your-username/green-ci-optimizer/docs/API.md'
+    documentation: 'https://github.com/lehlogonolo-hub/green-ci-optimizer/docs/API.md'
   });
 });
 

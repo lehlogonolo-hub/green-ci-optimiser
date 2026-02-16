@@ -17,5 +17,6 @@
         "**/.plugin_symlinks": true,
         "**/.rmv/catalog/**": true,
         "*/_*": false
-    }
+    },
+    "postman.settings.dotenv-detection-notification-visibility": false
 }

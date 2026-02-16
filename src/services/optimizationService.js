@@ -1,4 +1,4 @@
-const { Optimization, Project } = require('../database/models');
+const { Optimization, Project, Agent } = require('../database/models');
 const { Op } = require('sequelize');
 const logger = require('../utils/logger');
 const { v4: uuidv4 } = require('uuid');
@@ -16,7 +16,6 @@ class OptimizationService {
       if (!project) {
         logger.info(`Project ${data.projectId} not found, creating it...`);
         
-        // Create the project with both gitlabProjectId and internal ID
         project = await Project.create({
           id: uuidv4(),
           gitlabProjectId: data.projectId,
@@ -25,39 +24,33 @@ class OptimizationService {
           settings: {}
         });
         
-        logger.info(`Project ${data.projectId} created automatically with ID: ${project.id}`);
+        logger.info(`Project ${data.projectId} created with ID: ${project.id}`);
       }
 
-      // Now create the optimization using the project's internal ID (project.id)
-      const optimizationData = {
+      // Create optimization
+      const optimization = await Optimization.create({
         title: data.title,
         description: data.description,
-        projectId: project.id,  // This is the internal UUID, not the gitlabProjectId
+        projectId: project.gitlabProjectId, // Use gitlabProjectId as the foreign key
         type: data.type || 'general',
         impact: data.impact || 'medium',
         estimatedSavings: data.estimatedSavings || 0,
         status: data.status || 'pending',
         metadata: data.metadata || {}
-      };
-      
-      logger.info('Creating optimization with data:', optimizationData);
-      
-      const optimization = await Optimization.create(optimizationData);
+      });
 
-      logger.info('Optimization created successfully', { 
+      logger.info('Optimization created', { 
         id: optimization.id, 
-        projectId: data.projectId,
-        internalProjectId: project.id 
+        projectId: data.projectId 
       });
       
-      // Return the optimization with both IDs for clarity
+      // Return with project info
       const result = optimization.toJSON();
-      result.gitlabProjectId = project.gitlabProjectId;
       result.projectName = project.name;
       
       return result;
     } catch (error) {
-      logger.error('Error creating optimization', { error: error.message, stack: error.stack, data });
+      logger.error('Error creating optimization', { error: error.message, stack: error.stack });
       throw error;
     }
   }
@@ -65,11 +58,6 @@ class OptimizationService {
   async getOptimizations(filters = {}) {
     try {
       const where = {};
-      const include = [{
-        model: Project,
-        as: 'Project',
-        attributes: ['id', 'gitlabProjectId', 'name']
-      }];
       
       if (filters.status) {
         where.status = filters.status;
@@ -79,45 +67,44 @@ class OptimizationService {
         where.impact = filters.impact;
       }
 
-      // Handle projectId filter - it could be gitlabProjectId or internal ID
       if (filters.projectId) {
-        // Try to find the project first
-        const project = await Project.findOne({
-          where: {
-            [Op.or]: [
-              { id: filters.projectId },
-              { gitlabProjectId: filters.projectId }
-            ]
-          }
-        });
-        
-        if (project) {
-          where.projectId = project.id;
-        } else {
-          // No matching project, return empty array
-          return [];
-        }
+        where.projectId = filters.projectId;
       }
 
       const optimizations = await Optimization.findAll({
         where,
-        include,
+        include: [
+          {
+            model: Project,
+            as: 'project',
+            attributes: ['id', 'gitlabProjectId', 'name']
+          },
+          {
+            model: Agent,
+            as: 'agent',
+            attributes: ['id', 'name', 'status']
+          }
+        ],
         order: [['createdAt', 'DESC']],
         limit: filters.limit || 100
       });
 
-      // Transform the response to include gitlabProjectId at the top level
+      // Transform the response
       return optimizations.map(opt => {
         const optJson = opt.toJSON();
-        if (optJson.Project) {
-          optJson.gitlabProjectId = optJson.Project.gitlabProjectId;
-          optJson.projectName = optJson.Project.name;
-          delete optJson.Project;
+        if (optJson.project) {
+          optJson.gitlabProjectId = optJson.project.gitlabProjectId;
+          optJson.projectName = optJson.project.name;
+          delete optJson.project;
+        }
+        if (optJson.agent) {
+          optJson.agentName = optJson.agent.name;
+          delete optJson.agent;
         }
         return optJson;
       });
     } catch (error) {
-      logger.error('Error fetching optimizations', { error });
+      logger.error('Error fetching optimizations', { error: error.message });
       throw error;
     }
   }
@@ -125,21 +112,31 @@ class OptimizationService {
   async getOptimizationById(id) {
     try {
       const optimization = await Optimization.findByPk(id, {
-        include: [{
-          model: Project,
-          as: 'Project',
-          attributes: ['id', 'gitlabProjectId', 'name']
-        }]
+        include: [
+          {
+            model: Project,
+            as: 'project',
+            attributes: ['id', 'gitlabProjectId', 'name']
+          },
+          {
+            model: Agent,
+            as: 'agent',
+            attributes: ['id', 'name']
+          }
+        ]
       });
       
       if (!optimization) return null;
       
-      // Transform the response
       const result = optimization.toJSON();
-      if (result.Project) {
-        result.gitlabProjectId = result.Project.gitlabProjectId;
-        result.projectName = result.Project.name;
-        delete result.Project;
+      if (result.project) {
+        result.gitlabProjectId = result.project.gitlabProjectId;
+        result.projectName = result.project.name;
+        delete result.project;
+      }
+      if (result.agent) {
+        result.agentName = result.agent.name;
+        delete result.agent;
       }
       
       return result;
@@ -173,7 +170,6 @@ class OptimizationService {
 
       await optimization.save();
       
-      logger.info('Optimization status updated', { id, status });
       return this.getOptimizationById(id);
     } catch (error) {
       logger.error('Error updating optimization', { error });
@@ -186,7 +182,7 @@ class OptimizationService {
       const optimization = await Optimization.findByPk(id, {
         include: [{
           model: Project,
-          as: 'Project'
+          as: 'project'
         }]
       });
       
@@ -194,17 +190,15 @@ class OptimizationService {
         throw new Error('Optimization not found');
       }
 
-      // Update status to in_progress
       optimization.status = 'in_progress';
       optimization.appliedAt = new Date();
       
-      // Generate MR URL using gitlabProjectId
-      const mrUrl = `https://gitlab.com/${optimization.Project.gitlabProjectId}/merge_requests/${Date.now()}`;
+      const mrUrl = `https://gitlab.com/${optimization.projectId}/merge_requests/${Date.now()}`;
       optimization.mrUrl = mrUrl;
       
       await optimization.save();
       
-      // Simulate completion after 5 seconds
+      // Simulate completion
       setTimeout(async () => {
         try {
           optimization.status = 'completed';
@@ -235,29 +229,13 @@ class OptimizationService {
         where: { status: 'completed' }
       });
 
-      // Get top projects by savings
-      const [results] = await Optimization.sequelize.query(`
-        SELECT 
-          p.gitlab_project_id as projectId,
-          p.name as projectName,
-          SUM(o.estimated_savings) as totalSavings,
-          COUNT(o.id) as optimizationCount
-        FROM optimizations o
-        JOIN projects p ON p.id = o.project_id
-        WHERE o.status = 'completed'
-        GROUP BY p.id, p.gitlab_project_id, p.name
-        ORDER BY totalSavings DESC
-        LIMIT 5
-      `);
-
       return {
         total,
         pending,
         inProgress,
         completed,
         failed,
-        totalSavings: totalSavings || 0,
-        topProjects: results || []
+        totalSavings: totalSavings || 0
       };
     } catch (error) {
       logger.error('Error fetching optimization stats', { error });

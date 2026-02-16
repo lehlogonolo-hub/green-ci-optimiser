@@ -30,10 +30,7 @@ module.exports = (sequelize) => {
     },
     estimatedSavings: {
       type: DataTypes.FLOAT,
-      field: 'estimated_savings',
-      validate: {
-        min: 0
-      }
+      field: 'estimated_savings'
     },
     status: {
       type: DataTypes.ENUM('pending', 'in_progress', 'completed', 'failed'),
@@ -51,6 +48,10 @@ module.exports = (sequelize) => {
       type: DataTypes.DATE,
       field: 'completed_at'
     },
+    agentId: {
+      type: DataTypes.UUID,
+      field: 'agent_id'
+    },
     metadata: {
       type: DataTypes.JSON,
       defaultValue: {}
@@ -58,15 +59,7 @@ module.exports = (sequelize) => {
   }, {
     tableName: 'optimizations',
     timestamps: true,
-    underscored: true,
-    indexes: [
-      {
-        fields: ['project_id']
-      },
-      {
-        fields: ['status']
-      }
-    ]
+    underscored: true
   });
 
   return Optimization;

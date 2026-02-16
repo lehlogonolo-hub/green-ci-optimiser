@@ -13,7 +13,7 @@ module.exports = (sequelize) => {
       unique: true
     },
     status: {
-      type: DataTypes.ENUM('active', 'idle', 'error'),
+      type: DataTypes.ENUM('active', 'idle', 'running', 'error'),
       defaultValue: 'idle'
     },
     version: {

@@ -8,28 +8,53 @@ const dbConfig = config[env];
 const sequelize = new Sequelize(dbConfig);
 
 // Import models
+const Project = require('./Project')(sequelize);
 const PipelineMetric = require('./PipelineMetric')(sequelize);
 const Optimization = require('./Optimization')(sequelize);
 const Agent = require('./Agent')(sequelize);
-const Project = require('./Project')(sequelize);
 
 // Define associations
-Project.hasMany(PipelineMetric, { foreignKey: 'projectId' });
-PipelineMetric.belongsTo(Project, { foreignKey: 'projectId' });
+Project.hasMany(PipelineMetric, {
+  foreignKey: 'projectId',
+  sourceKey: 'gitlabProjectId',
+  as: 'metrics'
+});
 
-Project.hasMany(Optimization, { foreignKey: 'projectId' });
-Optimization.belongsTo(Project, { foreignKey: 'projectId' });
+PipelineMetric.belongsTo(Project, {
+  foreignKey: 'projectId',
+  targetKey: 'gitlabProjectId',
+  as: 'project'
+});
 
-Agent.hasMany(Optimization, { foreignKey: 'agentId' });
-Optimization.belongsTo(Agent, { foreignKey: 'agentId' });
+Project.hasMany(Optimization, {
+  foreignKey: 'projectId',
+  sourceKey: 'gitlabProjectId',
+  as: 'optimizations'
+});
+
+Optimization.belongsTo(Project, {
+  foreignKey: 'projectId',
+  targetKey: 'gitlabProjectId',
+  as: 'project'
+});
+
+Agent.hasMany(Optimization, {
+  foreignKey: 'agentId',
+  as: 'optimizations'
+});
+
+Optimization.belongsTo(Agent, {
+  foreignKey: 'agentId',
+  as: 'agent'
+});
 
 const db = {
   sequelize,
   Sequelize,
+  Project,
   PipelineMetric,
   Optimization,
-  Agent,
-  Project
+  Agent
 };
 
 // Test connection
@@ -38,7 +63,6 @@ async function testConnection() {
     await sequelize.authenticate();
     logger.info('Database connection established successfully');
     
-    // Sync models (in development)
     if (env === 'development') {
       await sequelize.sync({ alter: true });
       logger.info('Database synced');
@@ -48,6 +72,9 @@ async function testConnection() {
   }
 }
 
-testConnection();
+// Only run testConnection if not in a test environment
+if (require.main === module) {
+  testConnection();
+}
 
 module.exports = db;

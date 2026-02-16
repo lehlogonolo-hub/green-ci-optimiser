@@ -1,4 +1,4 @@
-const { PipelineMetric, Project } = require('../database/models');
+const { PipelineMetric, Project, sequelize } = require('../database/models');
 const { Op } = require('sequelize');
 const logger = require('../utils/logger');
 const { v4: uuidv4 } = require('uuid');
@@ -55,11 +55,24 @@ class MetricsService {
 
       const metrics = await PipelineMetric.findAll({
         where,
+        include: [{
+          model: Project,
+          as: 'project',
+          attributes: ['name', 'gitlabProjectId']
+        }],
         order: [['timestamp', 'DESC']],
         limit: filters.limit || 100
       });
 
-      return metrics;
+      // Transform response
+      return metrics.map(m => {
+        const json = m.toJSON();
+        if (json.project) {
+          json.projectName = json.project.name;
+          delete json.project;
+        }
+        return json;
+      });
     } catch (error) {
       logger.error('Error fetching metrics', { error });
       throw error;
@@ -78,10 +91,22 @@ class MetricsService {
             [Op.gte]: startDate
           }
         },
+        include: [{
+          model: Project,
+          as: 'project',
+          attributes: ['name']
+        }],
         order: [['timestamp', 'DESC']]
       });
 
-      return metrics;
+      return metrics.map(m => {
+        const json = m.toJSON();
+        if (json.project) {
+          json.projectName = json.project.name;
+          delete json.project;
+        }
+        return json;
+      });
     } catch (error) {
       logger.error('Error fetching project metrics', { error });
       throw error;
@@ -90,29 +115,34 @@ class MetricsService {
 
   async getSummary() {
     try {
-      const totalMetrics = await PipelineMetric.count();
+      // Get total count
+      const totalPipelines = await PipelineMetric.count();
       
-      const aggregates = await PipelineMetric.findAll({
-        attributes: [
-          [sequelize.fn('SUM', sequelize.col('co2kg')), 'totalCO2'],
-          [sequelize.fn('AVG', sequelize.col('eco_score')), 'avgScore'],
-          [sequelize.fn('SUM', sequelize.col('energy_kwh')), 'totalEnergy'],
-          [sequelize.fn('COUNT', sequelize.col('project_id')), 'uniqueProjects']
-        ],
-        raw: true
-      });
+      // Get aggregates using raw query
+      const [aggregates] = await sequelize.query(`
+        SELECT 
+          COALESCE(SUM(co2_kg), 0) as totalCO2,
+          COALESCE(AVG(eco_score), 0) as avgScore,
+          COALESCE(SUM(energy_kwh), 0) as totalEnergy,
+          COUNT(DISTINCT project_id) as uniqueProjects
+        FROM pipeline_metrics
+      `);
 
+      // Get total projects count
       const projects = await Project.count();
 
-      return {
-        totalPipelines: totalMetrics,
+      const summary = {
+        totalPipelines,
         totalCO2: Number(aggregates[0]?.totalCO2 || 0).toFixed(3),
         averageScore: Math.round(aggregates[0]?.avgScore || 0),
         totalEnergy: Number(aggregates[0]?.totalEnergy || 0).toFixed(3),
         projects
       };
+
+      logger.info('Summary calculated', summary);
+      return summary;
     } catch (error) {
-      logger.error('Error fetching summary', { error });
+      logger.error('Error fetching summary', { error: error.message });
       throw error;
     }
   }

@@ -23,43 +23,27 @@ module.exports = (sequelize) => {
     },
     duration: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        min: 0
-      }
+      allowNull: false
     },
     jobCount: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      field: 'job_count',
-      validate: {
-        min: 0
-      }
+      field: 'job_count'
     },
     energyKwh: {
       type: DataTypes.FLOAT,
       allowNull: false,
-      field: 'energy_kwh',
-      validate: {
-        min: 0
-      }
+      field: 'energy_kwh'
     },
     co2kg: {
       type: DataTypes.FLOAT,
       allowNull: false,
-      field: 'co2_kg',
-      validate: {
-        min: 0
-      }
+      field: 'co2_kg'
     },
     ecoScore: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      field: 'eco_score',
-      validate: {
-        min: 0,
-        max: 100
-      }
+      field: 'eco_score'
     },
     grade: {
       type: DataTypes.STRING(1),
@@ -72,18 +56,7 @@ module.exports = (sequelize) => {
   }, {
     tableName: 'pipeline_metrics',
     timestamps: true,
-    underscored: true,
-    indexes: [
-      {
-        fields: ['project_id']
-      },
-      {
-        fields: ['pipeline_id']
-      },
-      {
-        fields: ['timestamp']
-      }
-    ]
+    underscored: true
   });
 
   return PipelineMetric;

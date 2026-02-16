@@ -1,0 +1,67 @@
+stages:
+  - test
+  - build
+  - deploy
+  - monitor
+
+variables:
+  NODE_VERSION: "20"
+
+cache:
+  paths:
+    - node_modules/
+
+# Test stage
+test:
+  stage: test
+  image: node:${NODE_VERSION}
+  script:
+    - npm ci
+    - npm run lint
+    - npm test
+  only:
+    - main
+    - merge_requests
+
+# Build UI Dashboard
+build-ui:
+  stage: build
+  image: node:${NODE_VERSION}
+  script:
+    - cd ui-dashboard
+    - npm ci
+    - npm run build
+  artifacts:
+    paths:
+      - ui-dashboard/build/
+  only:
+    - main
+
+# Deploy to GitLab Pages
+pages:
+  stage: deploy
+  script:
+    - mv ui-dashboard/build public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
+
+# Deploy agents
+deploy-agents:
+  stage: deploy
+  script:
+    - echo "Deploying agents to GitLab Duo Platform"
+    # Agent deployment command (provided by GitLab)
+    - gitlab-duo deploy agents/
+  only:
+    - main
+
+# Monitor agent performance
+monitor:
+  stage: monitor
+  script:
+    - node scripts/check-agent-health.js
+  only:
+    - schedules

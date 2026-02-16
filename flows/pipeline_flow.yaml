@@ -1,0 +1,50 @@
+name: green-ci-pipeline-flow
+description: End-to-end pipeline optimization flow
+
+version: 1.0.0
+owner: green-ci-team
+
+triggers:
+  - event: pipeline_completed
+    filter:
+      - $pipeline.status == "success"
+      - $pipeline.duration > 300  # Only analyze pipelines > 5 min
+
+steps:
+  - id: analyze
+    agent: green-ci-optimizer
+    action: analyze_pipeline
+    with:
+      pipeline_id: $pipeline.id
+      project_id: $pipeline.project_id
+      
+  - id: check_optimizations
+    condition: $steps.analyze.output.has_optimizations
+    then:
+      - id: create_mr
+        agent: green-ci-optimizer
+        action: create_optimization_mr
+        with:
+          optimizations: $steps.analyze.output.optimizations
+          branch_prefix: "green-ci/opt"
+          
+      - id: notify_team
+        agent: green-ci-advisor
+        action: send_notification
+        with:
+          channel: "#green-ci-updates"
+          message: "🤖 Created MR !$steps.create_mr.output.mr_iid with optimizations"
+          
+  - id: update_dashboard
+    agent: green-ci-sentinel
+    action: post_to_dashboard
+    with:
+      metrics: $steps.analyze.output.metrics
+      
+  - id: store_in_bigquery
+    condition: $env.GOOGLE_APPLICATION_CREDENTIALS != ""
+    agent: green-ci-sentinel
+    action: store_metrics
+    with:
+      data: $steps.analyze.output.metrics
+      destination: bigquery

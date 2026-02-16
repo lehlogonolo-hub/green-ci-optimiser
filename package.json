@@ -1,0 +1,25 @@
+{
+  "name": "green-ci-optimiser",
+  "version": "1.0.0",
+  "description": "An AI agent that automatically optimizes CI/CD pipelines for sustainability.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lehlogonolo-hub/green-ci-optimiser.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lehlogonolo-hub/green-ci-optimiser/issues"
+  },
+  "homepage": "https://github.com/lehlogonolo-hub/green-ci-optimiser#readme"
+}

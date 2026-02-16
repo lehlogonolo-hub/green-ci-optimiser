@@ -1,0 +1,41 @@
+# Green CI Main Agent
+name: green-ci-optimizer
+version: 1.0.0
+description: Analyzes pipeline carbon footprint and creates optimization MRs
+
+triggers:
+  - pipeline_completed
+  - schedule: "0 9 * * 1"  # Weekly report every Monday
+  - webhook:
+      path: /webhooks/green-ci
+      method: POST
+
+permissions:
+  - read_api
+  - write_repository
+  - create_merge_request
+
+ai_model:
+  provider: anthropic
+  model: claude-3-sonnet-20241022
+  temperature: 0.2
+  max_tokens: 2000
+
+actions:
+  - name: analyze_pipeline
+    run: node /opt/green-ci/scripts/run-pipeline-analysis.js
+    env:
+      GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+      DASHBOARD_URL: ${{ secrets.DASHBOARD_URL }}
+      
+  - name: create_optimization_mr
+    condition: $analysis.optimizations.length > 0
+    run: node /opt/green-ci/scripts/create-optimization-mr.js
+    env:
+      OPTIMIZATION_DATA: $analysis.optimizations
+      
+  - name: post_to_dashboard
+    run: node /opt/green-ci/scripts/post-to-dashboard.js
+    env:
+      METRICS: $analysis.metrics
+      TIMESTAMP: $pipeline.completed_at

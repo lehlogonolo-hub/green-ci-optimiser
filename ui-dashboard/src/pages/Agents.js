@@ -7,33 +7,34 @@ import {
   CheckCircle2,
   AlertCircle,
   Play,
-  Pause,
   RefreshCw,
   Server,
   Cpu,
   HardDrive,
-  Network
+  Network,
+  Terminal,
+  Zap,
+  GitPullRequest,
+  BarChart3,
+  Eye,
+  ArrowRight 
 } from 'lucide-react';
 import { api, handleApiError } from '../services/api';
 import toast from 'react-hot-toast';
+import AgentLogsModal from '../components/AgentLogsModal';
 
 const Agents = () => {
   const [agents, setAgents] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [selectedAgent, setSelectedAgent] = useState(null);
-  const [agentLogs, setAgentLogs] = useState([]);
+  const [isLogsModalOpen, setIsLogsModalOpen] = useState(false);
+  const [agentMetrics, setAgentMetrics] = useState({});
 
   useEffect(() => {
     fetchAgents();
     const interval = setInterval(fetchAgents, 10000); // Refresh every 10 seconds
     return () => clearInterval(interval);
   }, []);
-
-  useEffect(() => {
-    if (selectedAgent) {
-      fetchAgentLogs(selectedAgent.name);
-    }
-  }, [selectedAgent]);
 
   const fetchAgents = async () => {
     try {
@@ -43,10 +44,18 @@ const Agents = () => {
         ...data
       }));
       setAgents(agentsData);
+      
+      // Generate metrics for each agent
+      const metrics = {};
+      agentsData.forEach(agent => {
+        metrics[agent.name] = generateAgentMetrics(agent);
+      });
+      setAgentMetrics(metrics);
+      
     } catch (error) {
       handleApiError(error);
       // Fallback mock data
-      setAgents([
+      const mockAgents = [
         {
           name: 'green-ci-optimizer',
           status: 'active',
@@ -74,29 +83,66 @@ const Agents = () => {
           avgResponseTime: 15.7,
           lastRun: new Date(Date.now() - 7200000).toISOString()
         }
-      ]);
+      ];
+      setAgents(mockAgents);
+      
+      const metrics = {};
+      mockAgents.forEach(agent => {
+        metrics[agent.name] = generateAgentMetrics(agent);
+      });
+      setAgentMetrics(metrics);
     } finally {
       setIsLoading(false);
     }
   };
 
-  const fetchAgentLogs = async (agentName) => {
-    try {
-      const response = await api.get(`/agents/${agentName}/logs?limit=20`);
-      setAgentLogs(response.data.data);
-    } catch (error) {
-      handleApiError(error);
-    }
+  const generateAgentMetrics = (agent) => {
+    return {
+      cpuUsage: Math.floor(Math.random() * 30) + 10,
+      memoryUsage: Math.floor(Math.random() * 512) + 256,
+      networkIO: (Math.random() * 2 + 0.5).toFixed(1),
+      successRate: Math.floor(Math.random() * 10) + 90,
+      queueLength: Math.floor(Math.random() * 5),
+      lastTask: {
+        type: ['analysis', 'optimization', 'monitoring'][Math.floor(Math.random() * 3)],
+        duration: Math.floor(Math.random() * 30) + 5,
+        result: Math.random() > 0.1 ? 'success' : 'failure'
+      }
+    };
   };
 
   const handleTriggerAgent = async (agentName) => {
     try {
+      toast.loading(`Triggering ${agentName}...`, { id: agentName });
+      
       const response = await api.post(`/agents/${agentName}/run`);
-      toast.success(`Agent ${agentName} triggered successfully`);
+      
+      toast.success(`Agent ${agentName} triggered successfully`, { id: agentName });
+      
+      // Show what the agent is doing
+      toast.info(
+        <div className="space-y-1">
+          <p className="font-medium">Agent Tasks:</p>
+          <ul className="text-xs list-disc pl-4">
+            <li>Analyzing pipeline patterns</li>
+            <li>Calculating carbon footprint</li>
+            <li>Detecting optimization opportunities</li>
+            <li>Generating recommendations</li>
+          </ul>
+        </div>,
+        { duration: 5000 }
+      );
+      
       fetchAgents();
     } catch (error) {
       handleApiError(error);
+      toast.error(`Failed to trigger ${agentName}`, { id: agentName });
     }
+  };
+
+  const handleViewLogs = (agent) => {
+    setSelectedAgent(agent);
+    setIsLogsModalOpen(true);
   };
 
   const getStatusColor = (status) => {
@@ -146,7 +192,10 @@ const Agents = () => {
       <div className="flex justify-between items-center">
         <div>
           <h1 className="text-3xl font-bold text-gray-800">AI Agents</h1>
-          <p className="text-gray-500 mt-1">Monitor and manage your Green CI agents</p>
+          <p className="text-gray-500 mt-1">
+            {agents.filter(a => a.status === 'active' || a.status === 'running').length} active • 
+            Last updated: {new Date().toLocaleTimeString()}
+          </p>
         </div>
         <button
           onClick={fetchAgents}
@@ -165,14 +214,10 @@ const Agents = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.1 }}
-            className={`bg-white rounded-2xl shadow-sm border-2 cursor-pointer transition-all ${
-              selectedAgent?.name === agent.name
-                ? 'border-emerald-500 shadow-lg'
-                : 'border-gray-200 hover:border-emerald-200'
-            }`}
-            onClick={() => setSelectedAgent(agent)}
+            className="bg-white rounded-2xl shadow-sm border-2 border-gray-200 hover:border-emerald-200 transition-all"
           >
             <div className="p-6">
+              {/* Header */}
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center space-x-3">
                   <div className={`p-3 rounded-xl ${
@@ -199,6 +244,7 @@ const Agents = () => {
                 </span>
               </div>
 
+              {/* Metrics */}
               <div className="grid grid-cols-2 gap-4 mb-4">
                 <div>
                   <p className="text-xs text-gray-500">Analyses</p>
@@ -213,119 +259,137 @@ const Agents = () => {
                   <p className="text-lg font-semibold text-gray-800">{agent.avgResponseTime || 0}s</p>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500">Last Run</p>
-                  <p className="text-sm font-semibold text-gray-800">
-                    {agent.lastRun ? new Date(agent.lastRun).toLocaleTimeString() : 'N/A'}
-                  </p>
+                  <p className="text-xs text-gray-500">Success Rate</p>
+                  <p className="text-lg font-semibold text-gray-800">{agentMetrics[agent.name]?.successRate || 95}%</p>
                 </div>
               </div>
 
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  handleTriggerAgent(agent.name);
-                }}
-                className="w-full flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white py-2 rounded-xl transition-colors"
-              >
-                <Play className="w-4 h-4" />
-                <span className="text-sm font-medium">Trigger Agent</span>
-              </button>
+              {/* Resource Usage */}
+              <div className="space-y-3 mb-4">
+                <div>
+                  <div className="flex justify-between text-xs mb-1">
+                    <span className="text-gray-500">CPU Usage</span>
+                    <span className="font-medium">{agentMetrics[agent.name]?.cpuUsage || 0}%</span>
+                  </div>
+                  <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                    <div 
+                      className="h-full bg-emerald-500 rounded-full"
+                      style={{ width: `${agentMetrics[agent.name]?.cpuUsage || 0}%` }}
+                    ></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-xs mb-1">
+                    <span className="text-gray-500">Memory Usage</span>
+                    <span className="font-medium">{agentMetrics[agent.name]?.memoryUsage || 0} MB</span>
+                  </div>
+                  <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                    <div 
+                      className="h-full bg-blue-500 rounded-full"
+                      style={{ width: `${((agentMetrics[agent.name]?.memoryUsage || 0) / 1024) * 100}%` }}
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Last Activity */}
+              <div className="bg-gray-50 rounded-lg p-3 mb-4">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-2">
+                    <Activity className="w-4 h-4 text-gray-400" />
+                    <span className="text-xs text-gray-600">Last Activity</span>
+                  </div>
+                  <span className="text-xs font-medium">
+                    {agent.lastRun ? new Date(agent.lastRun).toLocaleTimeString() : 'N/A'}
+                  </span>
+                </div>
+                {agentMetrics[agent.name]?.lastTask && (
+                  <div className="mt-2 text-xs">
+                    <span className="text-gray-500">Task: </span>
+                    <span className="font-medium capitalize">{agentMetrics[agent.name].lastTask.type}</span>
+                    <span className="text-gray-500 mx-1">•</span>
+                    <span className="text-gray-500">{agentMetrics[agent.name].lastTask.duration}s</span>
+                    <span className="ml-2">
+                      {agentMetrics[agent.name].lastTask.result === 'success' ? (
+                        <CheckCircle2 className="w-3 h-3 text-emerald-500 inline" />
+                      ) : (
+                        <AlertCircle className="w-3 h-3 text-red-500 inline" />
+                      )}
+                    </span>
+                  </div>
+                )}
+              </div>
+
+              {/* Actions */}
+              <div className="flex space-x-2">
+                <button
+                  onClick={() => handleTriggerAgent(agent.name)}
+                  disabled={agent.status === 'running'}
+                  className="flex-1 flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white py-2 rounded-xl transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  <Play className="w-4 h-4" />
+                  <span className="text-sm font-medium">
+                    {agent.status === 'running' ? 'Running...' : 'Trigger'}
+                  </span>
+                </button>
+                <button
+                  onClick={() => handleViewLogs(agent)}
+                  className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-xl transition-colors"
+                  title="View Logs"
+                >
+                  <Terminal className="w-4 h-4" />
+                </button>
+              </div>
             </div>
           </motion.div>
         ))}
       </div>
 
-      {/* Agent Details */}
-      {selectedAgent && (
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6"
-        >
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-xl font-bold text-gray-800">Agent Details: {selectedAgent.name}</h2>
-            <button
-              onClick={() => setSelectedAgent(null)}
-              className="text-gray-400 hover:text-gray-600"
-            >
-              ✕
-            </button>
+      {/* Agent Summary */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3 }}
+        className="bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl p-6 text-white"
+      >
+        <h3 className="text-lg font-semibold mb-4">Agent Fleet Summary</h3>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div>
+            <p className="text-emerald-100 text-sm mb-1">Total Analyses</p>
+            <p className="text-2xl font-bold">
+              {agents.reduce((sum, a) => sum + (a.totalAnalyses || 0), 0)}
+            </p>
           </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {/* Metrics */}
-            <div className="lg:col-span-1 space-y-4">
-              <h3 className="font-semibold text-gray-700 mb-3">Performance Metrics</h3>
-              
-              <div className="bg-gray-50 rounded-xl p-4">
-                <div className="flex items-center space-x-3 mb-3">
-                  <Cpu className="w-5 h-5 text-gray-500" />
-                  <span className="text-sm text-gray-600">CPU Usage</span>
-                  <span className="ml-auto font-semibold text-gray-800">24%</span>
-                </div>
-                <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
-                  <div className="h-full bg-emerald-500 rounded-full" style={{ width: '24%' }}></div>
-                </div>
-              </div>
-
-              <div className="bg-gray-50 rounded-xl p-4">
-                <div className="flex items-center space-x-3 mb-3">
-                  <HardDrive className="w-5 h-5 text-gray-500" />
-                  <span className="text-sm text-gray-600">Memory Usage</span>
-                  <span className="ml-auto font-semibold text-gray-800">512 MB</span>
-                </div>
-                <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
-                  <div className="h-full bg-blue-500 rounded-full" style={{ width: '45%' }}></div>
-                </div>
-              </div>
-
-              <div className="bg-gray-50 rounded-xl p-4">
-                <div className="flex items-center space-x-3 mb-3">
-                  <Network className="w-5 h-5 text-gray-500" />
-                  <span className="text-sm text-gray-600">Network I/O</span>
-                  <span className="ml-auto font-semibold text-gray-800">1.2 MB/s</span>
-                </div>
-                <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
-                  <div className="h-full bg-purple-500 rounded-full" style={{ width: '60%' }}></div>
-                </div>
-              </div>
-
-              <div className="bg-emerald-50 rounded-xl p-4 border border-emerald-200">
-                <div className="flex items-center justify-between">
-                  <span className="text-sm font-medium text-emerald-700">Health Score</span>
-                  <span className="text-2xl font-bold text-emerald-700">98%</span>
-                </div>
-                <p className="text-xs text-emerald-600 mt-1">All systems operational</p>
-              </div>
-            </div>
-
-            {/* Logs */}
-            <div className="lg:col-span-2">
-              <h3 className="font-semibold text-gray-700 mb-3">Recent Activity Logs</h3>
-              <div className="bg-gray-900 rounded-xl p-4 h-96 overflow-y-auto custom-scrollbar">
-                {agentLogs.map((log, index) => (
-                  <div key={index} className="font-mono text-sm mb-2 pb-2 border-b border-gray-800 last:border-0">
-                    <span className="text-gray-500">[{new Date(log.timestamp).toLocaleTimeString()}]</span>{' '}
-                    <span className={`${
-                      log.level === 'error' ? 'text-red-400' :
-                      log.level === 'warn' ? 'text-yellow-400' :
-                      'text-emerald-400'
-                    }`}>
-                      [{log.level}]
-                    </span>{' '}
-                    <span className="text-gray-300">{log.message}</span>
-                    {log.metadata && (
-                      <pre className="text-xs text-gray-500 mt-1 ml-6">
-                        {JSON.stringify(log.metadata, null, 2)}
-                      </pre>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
+          <div>
+            <p className="text-emerald-100 text-sm mb-1">MRs Created</p>
+            <p className="text-2xl font-bold">
+              {agents.reduce((sum, a) => sum + (a.totalMRsCreated || 0), 0)}
+            </p>
           </div>
-        </motion.div>
-      )}
+          <div>
+            <p className="text-emerald-100 text-sm mb-1">Avg Response Time</p>
+            <p className="text-2xl font-bold">
+              {(agents.reduce((sum, a) => sum + (a.avgResponseTime || 0), 0) / agents.length).toFixed(1)}s
+            </p>
+          </div>
+          <div>
+            <p className="text-emerald-100 text-sm mb-1">CO₂ Saved</p>
+            <p className="text-2xl font-bold">
+              {(agents.reduce((sum, a) => sum + (a.totalMRsCreated || 0), 0) * 0.025).toFixed(2)} kg
+            </p>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* Agent Logs Modal */}
+      <AgentLogsModal
+        agent={selectedAgent}
+        isOpen={isLogsModalOpen}
+        onClose={() => {
+          setIsLogsModalOpen(false);
+          setSelectedAgent(null);
+        }}
+      />
     </div>
   );
 };

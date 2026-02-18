@@ -30,8 +30,6 @@ api.interceptors.response.use(
   },
   (error) => {
     if (error.response) {
-      // The request was made and the server responded with a status code
-      // that falls out of the range of 2xx
       console.error('API Error:', error.response.data);
       
       switch (error.response.status) {
@@ -54,11 +52,9 @@ api.interceptors.response.use(
           toast.error(error.response.data?.error || 'An error occurred');
       }
     } else if (error.request) {
-      // The request was made but no response was received
       console.error('No response received:', error.request);
       toast.error('Cannot connect to server. Please check if the API is running.');
     } else {
-      // Something happened in setting up the request that triggered an Error
       console.error('Request error:', error.message);
       toast.error('Request failed: ' + error.message);
     }
@@ -67,8 +63,45 @@ api.interceptors.response.use(
   }
 );
 
+// Export functions
+export const exportToCSV = (data, filename) => {
+  if (!data || data.length === 0) {
+    toast.error('No data to export');
+    return;
+  }
+
+  const headers = Object.keys(data[0]).join(',');
+  const rows = data.map(item => Object.values(item).join(',')).join('\n');
+  const csv = `${headers}\n${rows}`;
+  
+  const blob = new Blob([csv], { type: 'text/csv' });
+  const url = window.URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `${filename}_${new Date().toISOString().split('T')[0]}.csv`;
+  a.click();
+  window.URL.revokeObjectURL(url);
+  toast.success(`Exported ${data.length} records to CSV`);
+};
+
+export const exportToJSON = (data, filename) => {
+  if (!data) {
+    toast.error('No data to export');
+    return;
+  }
+
+  const json = JSON.stringify(data, null, 2);
+  const blob = new Blob([json], { type: 'application/json' });
+  const url = window.URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `${filename}_${new Date().toISOString().split('T')[0]}.json`;
+  a.click();
+  window.URL.revokeObjectURL(url);
+  toast.success(`Exported data to JSON`);
+};
+
 export const handleApiError = (error) => {
-  // Additional error handling logic
   console.error('API Error:', error);
 };
 

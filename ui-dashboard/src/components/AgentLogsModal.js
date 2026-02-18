@@ -13,9 +13,7 @@ import {
   Calendar,
   Download,
   Eye,
-  Filter,
-  ArrowRight, 
-  Clock       
+  Filter
 } from 'lucide-react';
 import { api, exportToCSV, exportToJSON } from '../services/api';
 import toast from 'react-hot-toast';
@@ -28,20 +26,19 @@ import {
   Tooltip,
   ResponsiveContainer
 } from 'recharts';
-import { format, subDays, subHours } from 'date-fns';
+import { format, subDays, subHours, subMonths } from 'date-fns';
 import PipelineDetailsModal from '../components/PipelineDetailsModal';
 
 const Dashboard = () => {
   const [metrics, setMetrics] = useState({
     totalPipelines: 0,
-    totalCO2: '0',
+    totalCO2: 0,
     averageScore: 0,
-    totalEnergy: '0',
+    totalEnergy: 0,
     projects: 0,
-    monthlyTarget: 5.0,
-    targetProgress: 0,
-    weeklyTrend: '0',
-    monthlyTrend: '0'
+    monthlyTarget: 5.0, // 5kg monthly target
+    weeklyTrend: 0,
+    monthlyTrend: 0
   });
   
   const [recentPipelines, setRecentPipelines] = useState([]);
@@ -85,7 +82,7 @@ const Dashboard = () => {
 
       // Fetch metrics summary
       const metricsRes = await api.get('/metrics/summary');
-      const metricsData = metricsRes.data.data || {};
+      const metricsData = metricsRes.data.data;
       
       // Fetch all metrics for chart
       const metricsListRes = await api.get('/metrics', {
@@ -95,45 +92,45 @@ const Dashboard = () => {
         }
       });
       
-      const allMetrics = metricsListRes.data.data || [];
+      const allMetrics = metricsListRes.data.data;
       
       // Calculate trends
       const midPoint = Math.floor(allMetrics.length / 2);
       const firstHalf = allMetrics.slice(0, midPoint);
       const secondHalf = allMetrics.slice(midPoint);
       
-      const firstHalfAvg = firstHalf.reduce((sum, m) => sum + (m.co2kg || 0), 0) / (firstHalf.length || 1);
-      const secondHalfAvg = secondHalf.reduce((sum, m) => sum + (m.co2kg || 0), 0) / (secondHalf.length || 1);
+      const firstHalfAvg = firstHalf.reduce((sum, m) => sum + (m.co2kg || 0), 0) / firstHalf.length;
+      const secondHalfAvg = secondHalf.reduce((sum, m) => sum + (m.co2kg || 0), 0) / secondHalf.length;
       
       const weeklyTrend = firstHalfAvg ? ((secondHalfAvg - firstHalfAvg) / firstHalfAvg * 100) : 0;
       
       // Calculate monthly target progress
-      const totalCO2 = parseFloat(metricsData.totalCO2) || 0;
-      const monthlyTarget = 5.0;
+      const totalCO2 = metricsData.totalCO2 || 0;
+      const monthlyTarget = 5.0; // 5kg target
       const targetProgress = (totalCO2 / monthlyTarget) * 100;
 
       setMetrics({
         totalPipelines: metricsData.totalPipelines || 0,
-        totalCO2: totalCO2.toFixed(3),
+        totalCO2: Number(totalCO2).toFixed(3),
         averageScore: Math.round(metricsData.averageScore || 0),
-        totalEnergy: (parseFloat(metricsData.totalEnergy) || 0).toFixed(3),
+        totalEnergy: Number(metricsData.totalEnergy || 0).toFixed(3),
         projects: metricsData.projects || 0,
         monthlyTarget,
         targetProgress: Math.min(100, Math.round(targetProgress)),
-        weeklyTrend: weeklyTrend.toFixed(1),
-        monthlyTrend: (weeklyTrend * 4).toFixed(1)
+        weeklyTrend: Number(weeklyTrend).toFixed(1),
+        monthlyTrend: Number(weeklyTrend * 4).toFixed(1) // Approximate
       });
 
       // Prepare chart data
       const groupedData = groupMetricsByDate(allMetrics, timeRange);
       setChartData(groupedData);
 
-      // Fetch recent pipelines
+      // Fetch recent pipelines (last 10)
       setRecentPipelines(allMetrics.slice(0, 10));
 
       // Fetch optimizations
       const optimizationsRes = await api.get('/optimizations?limit=10');
-      setOptimizations(optimizationsRes.data.data || []);
+      setOptimizations(optimizationsRes.data.data);
 
     } catch (error) {
       console.error('Failed to fetch dashboard data:', error);
@@ -149,6 +146,8 @@ const Dashboard = () => {
 
   useEffect(() => {
     fetchDashboardData();
+    
+    // Refresh every 60 seconds
     const interval = setInterval(fetchDashboardData, 60000);
     return () => clearInterval(interval);
   }, [fetchDashboardData]);
@@ -212,17 +211,6 @@ const Dashboard = () => {
     const mins = Math.floor(seconds / 60);
     const secs = seconds % 60;
     return `${mins}m ${secs}s`;
-  };
-
-  const getGradeColor = (grade) => {
-    const colors = {
-      'A': 'bg-emerald-100 text-emerald-700 border-emerald-200',
-      'B': 'bg-blue-100 text-blue-700 border-blue-200',
-      'C': 'bg-yellow-100 text-yellow-700 border-yellow-200',
-      'D': 'bg-orange-100 text-orange-700 border-orange-200',
-      'F': 'bg-red-100 text-red-700 border-red-200',
-    };
-    return colors[grade] || 'bg-gray-100 text-gray-700 border-gray-200';
   };
 
   if (isLoading.metrics && isLoading.pipelines) {
@@ -302,12 +290,12 @@ const Dashboard = () => {
               <Wind className="w-6 h-6 text-emerald-600" />
             </div>
             <span className={`flex items-center text-sm px-2 py-1 rounded-full ${
-              parseFloat(metrics.weeklyTrend) < 0 
+              metrics.weeklyTrend < 0 
                 ? 'bg-emerald-100 text-emerald-700' 
                 : 'bg-red-100 text-red-700'
             }`}>
-              {parseFloat(metrics.weeklyTrend) < 0 ? <ArrowDown className="w-3 h-3 mr-1" /> : <ArrowUp className="w-3 h-3 mr-1" />}
-              {Math.abs(parseFloat(metrics.weeklyTrend))}%
+              {metrics.weeklyTrend < 0 ? <ArrowDown className="w-3 h-3 mr-1" /> : <ArrowUp className="w-3 h-3 mr-1" />}
+              {Math.abs(metrics.weeklyTrend)}%
             </span>
           </div>
           <h3 className="text-sm font-medium text-gray-500">Total CO₂ Emissions</h3>
@@ -546,7 +534,13 @@ const Dashboard = () => {
                       </div>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <span className={`text-xs font-bold px-2 py-1 rounded-full border ${getGradeColor(pipeline.grade)}`}>
+                      <span className={`text-xs font-bold px-2 py-1 rounded-full border ${
+                        pipeline.grade === 'A' ? 'bg-emerald-100 text-emerald-700 border-emerald-200' :
+                        pipeline.grade === 'B' ? 'bg-blue-100 text-blue-700 border-blue-200' :
+                        pipeline.grade === 'C' ? 'bg-yellow-100 text-yellow-700 border-yellow-200' :
+                        pipeline.grade === 'D' ? 'bg-orange-100 text-orange-700 border-orange-200' :
+                        'bg-red-100 text-red-700 border-red-200'
+                      }`}>
                         {pipeline.grade}
                       </span>
                       <Eye className="w-4 h-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity" />

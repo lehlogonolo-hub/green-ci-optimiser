@@ -629,3 +629,790 @@
 {"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:11:16.538Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
 {"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-16T14:11:16.558Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
 {"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:11:16.570Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-16T14:11:21.511Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-16T14:11:21.513Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-16T14:11:21.513Z"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-16T14:11:27.579Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-16T14:11:27.603Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-16T14:11:27.872Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:11:27.880Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:11:27.942Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-16T14:11:27.954Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-16T14:11:27.957Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-16T14:11:27.965Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:11:28.004Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:11:28.030Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:11:31.074Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:11:31.096Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:11:34.989Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:11:35.006Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-16T14:11:36.597Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-16T14:11:36.606Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-16T14:11:40.371Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:11:40.376Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:11:40.398Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-16T14:11:40.404Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-16T14:11:40.411Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:11:40.427Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-16T14:11:40.453Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:11:40.467Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:12:04.452Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:12:04.461Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:12:05.951Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:12:05.965Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-16T14:12:07.333Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-16T14:12:07.341Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-16T14:12:43.316Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-16T14:12:43.319Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-16T14:12:43.527Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:12:43.529Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:12:43.545Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-16T14:12:43.551Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-16T14:12:43.560Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:12:43.578Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-16T14:12:43.597Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:12:43.609Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-16T14:12:58.597Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-16T14:12:58.599Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-16T14:12:58.722Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:12:58.724Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:12:58.742Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-16T14:12:58.750Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-16T14:12:58.760Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-16T14:12:58.766Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:12:58.809Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:12:58.822Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-16T14:13:29.879Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-16T14:13:29.885Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"POST /api/agents/green-ci-advisor/run","timestamp":"2026-02-16T14:13:33.740Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"Agent green-ci-advisor triggered manually","timestamp":"2026-02-16T14:13:33.776Z"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-16T14:13:33.786Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"POST /api/agents/green-ci-sentinel/run","timestamp":"2026-02-16T14:13:35.108Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"Agent green-ci-sentinel triggered manually","timestamp":"2026-02-16T14:13:35.124Z"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-16T14:13:35.139Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"Agent run completed","name":"green-ci-advisor","timestamp":"2026-02-16T14:13:35.800Z"}
+{"ip":"::1","level":"info","message":"POST /api/agents/green-ci-optimizer/run","timestamp":"2026-02-16T14:13:36.411Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"Agent green-ci-optimizer triggered manually","timestamp":"2026-02-16T14:13:36.435Z"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-16T14:13:36.444Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"Agent run completed","name":"green-ci-sentinel","timestamp":"2026-02-16T14:13:37.155Z"}
+{"level":"info","message":"Agent run completed","name":"green-ci-optimizer","timestamp":"2026-02-16T14:13:38.471Z"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-16T14:13:39.888Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-16T14:13:45.274Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:13:45.276Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:13:45.289Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-16T14:13:45.298Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-16T14:13:45.305Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:13:45.318Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-16T14:13:45.326Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:13:45.338Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-16T14:13:48.648Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:13:48.649Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-16T14:13:48.663Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:13:48.670Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-16T14:13:50.710Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:13:50.712Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-16T14:13:50.731Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:13:50.746Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-16T14:13:52.605Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:13:52.607Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-16T14:13:52.629Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:13:52.638Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-16T14:13:55.900Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:13:55.903Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-16T14:13:55.915Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:13:55.925Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-16T14:13:58.867Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:13:58.871Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-16T14:13:58.892Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:13:58.901Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-16T14:14:04.721Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T14:14:04.723Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-16T14:14:04.739Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T14:14:04.747Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-16T17:54:00.974Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T17:54:01.052Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-16T17:54:01.240Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T17:54:01.259Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-16T17:54:02.920Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-16T17:54:02.923Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-16T17:54:02.954Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-16T17:54:02.962Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T05:46:36.138Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T05:46:36.175Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T05:46:36.581Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T05:46:36.677Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T05:46:36.739Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T05:46:36.743Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T05:46:36.746Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T05:46:36.773Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T05:46:36.814Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T05:46:36.841Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T06:40:39.309Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T06:40:39.600Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T06:40:40.272Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T06:40:40.296Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T06:40:41.553Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T06:40:41.566Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T06:40:44.710Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T06:40:44.715Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T06:40:44.735Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T06:40:44.739Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T06:40:44.748Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T06:40:44.758Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T06:40:44.775Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T06:40:44.785Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T06:40:49.405Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T06:40:49.420Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T06:40:50.501Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T06:40:50.514Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T06:40:51.935Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T06:40:51.943Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T06:41:01.945Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T06:41:07.802Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T06:41:08.376Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T06:41:09.051Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T06:41:09.415Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T06:41:10.122Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T06:41:10.126Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T06:41:10.763Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T06:41:10.930Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T06:41:11.005Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T06:41:11.100Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T06:41:11.169Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T06:41:11.182Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T06:41:14.766Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T06:41:14.827Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T06:41:14.962Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T06:41:14.971Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T06:41:15.283Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T06:41:15.346Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T06:41:15.600Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T06:41:15.653Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T08:08:42.367Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T08:08:42.523Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"POST /api/agents/green-ci-optimizer/run","timestamp":"2026-02-17T08:08:45.350Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"Agent green-ci-optimizer triggered manually","timestamp":"2026-02-17T08:08:45.415Z"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T08:08:45.441Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"Agent run completed","name":"green-ci-optimizer","timestamp":"2026-02-17T08:08:47.465Z"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T08:08:49.697Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T08:08:49.743Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T08:08:50.096Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T08:08:50.131Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T08:08:50.145Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T08:08:50.162Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T08:08:50.307Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T08:08:50.365Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T08:51:22.009Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T08:51:22.017Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T08:51:22.327Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T08:51:22.334Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T08:51:22.351Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T08:51:22.358Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T08:51:22.361Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T08:51:22.372Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T08:51:22.396Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T08:51:22.414Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T08:56:42.360Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T08:56:42.363Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T08:56:42.380Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T08:56:42.389Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T08:56:46.828Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T08:56:46.830Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T08:56:46.850Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T08:56:46.854Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T08:57:46.666Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T08:57:46.668Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T08:57:46.698Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T08:57:46.711Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T08:57:50.678Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T08:57:50.680Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T08:57:50.702Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T08:57:50.715Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:08:32.399Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:08:32.409Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:08:37.646Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:08:38.838Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:08:46.254Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:08:48.439Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"POST /api/optimizations/f1d1def2-a2ff-48b0-83dd-769a0d54654a/apply","timestamp":"2026-02-17T09:09:00.787Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"Optimization f1d1def2-a2ff-48b0-83dd-769a0d54654a applied, MR created","timestamp":"2026-02-17T09:09:00.826Z"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:09:00.836Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:09:04.789Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"id":"f1d1def2-a2ff-48b0-83dd-769a0d54654a","level":"info","message":"Optimization auto-completed","timestamp":"2026-02-17T09:09:05.837Z"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:09:23.126Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:12:46.822Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:12:46.838Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:13:07.702Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:13:07.711Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:13:43.977Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:13:43.993Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:13:57.919Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:13:57.927Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:14:00.922Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:14:08.174Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:14:18.164Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:14:28.165Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:14:38.160Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:14:48.165Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:14:57.931Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:15:08.173Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:15:18.167Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:15:28.173Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:23:18.567Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:23:18.572Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:23:18.573Z"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:23:18.695Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:23:59.732Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:23:59.734Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:23:59.734Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:24:18.709Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:24:18.711Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:24:18.711Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:25:39.868Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:25:39.870Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:25:39.871Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:25:57.445Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:25:57.449Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:25:57.450Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:26:25.400Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:26:25.407Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:26:25.408Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:26:43.374Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:26:43.378Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:26:43.379Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:27:26.501Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:27:26.507Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:27:26.508Z"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:27:39.053Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:27:39.076Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:27:39.137Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:27:39.163Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:27:39.170Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:27:39.193Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:27:39.201Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:27:39.231Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:27:45.879Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:27:45.883Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:27:45.905Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:27:45.916Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:27:49.632Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:27:49.635Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:27:49.654Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:27:49.659Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:27:52.469Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:27:52.471Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:27:52.494Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:27:52.504Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:28:23.805Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:28:23.812Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:28:23.813Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:28:59.921Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:28:59.925Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:28:59.926Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:29:36.309Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:29:36.314Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:29:36.315Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:29:49.518Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:29:49.527Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:29:49.528Z"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:30:39.056Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:30:39.109Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:30:39.153Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:30:39.186Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:30:39.193Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:30:39.206Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:30:39.226Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:30:39.240Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:30:39.258Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:30:39.276Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:30:44.520Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:30:44.523Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:30:44.866Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:30:44.869Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:30:44.888Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:30:44.897Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:30:44.904Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:30:44.913Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:30:44.971Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:30:44.992Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:31:52.698Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:31:52.706Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:31:52.707Z"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:31:57.221Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:31:57.249Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:32:03.145Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:32:03.154Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:32:03.194Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:32:03.211Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:32:03.219Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:32:03.230Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:32:03.239Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:32:03.262Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:32:08.919Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:32:08.932Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:32:13.845Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:32:13.851Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:32:13.874Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:32:13.889Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:32:13.895Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:32:13.909Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:32:13.920Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:32:13.937Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:32:16.883Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:32:16.893Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:32:23.165Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:32:23.183Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:32:29.726Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:32:29.732Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:32:29.753Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:32:29.758Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:32:29.760Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:32:29.770Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:32:29.772Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:32:29.790Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:32:29.802Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:32:29.812Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:32:49.258Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:32:49.260Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:32:49.261Z"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:32:52.801Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:32:52.819Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:32:53.419Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:32:53.426Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:32:53.461Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:32:53.486Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:32:53.490Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:32:53.501Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:32:53.525Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:32:53.541Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:32:56.576Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:32:56.584Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:32:56.615Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:32:56.625Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:32:56.629Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:32:56.645Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:32:56.650Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:32:56.675Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:32:56.699Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:32:56.720Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:35:43.515Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:35:43.518Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:35:43.518Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:35:47.896Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:35:47.902Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:35:47.903Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:35:55.118Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:35:55.121Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:35:55.122Z"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:35:55.185Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:35:55.196Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:35:55.223Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:35:55.237Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:35:55.240Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:35:55.246Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:35:55.252Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:35:55.267Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:35:55.283Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:35:55.290Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:35:57.013Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:35:57.016Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:35:57.017Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:35:58.286Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:35:58.288Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:35:58.289Z"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:35:58.418Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:35:58.430Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:35:58.453Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:35:58.466Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:35:58.468Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:35:58.472Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:35:58.480Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:35:58.500Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:35:58.513Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:35:58.522Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:36:46.526Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:36:46.531Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:36:46.531Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:36:49.499Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:36:49.509Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:36:49.511Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:36:54.332Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:36:54.336Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:36:54.336Z"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:36:54.458Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:36:54.482Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:36:54.529Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:36:54.549Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:36:54.552Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:36:54.562Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:36:54.565Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:36:54.589Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:36:54.616Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:36:54.628Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:38:09.029Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:38:09.035Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:38:09.036Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:38:12.720Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:38:12.729Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:38:12.731Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:38:17.846Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:38:17.851Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:38:17.851Z"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:38:18.220Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:38:18.239Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:38:18.279Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:38:18.305Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:38:18.317Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:38:18.336Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:38:18.392Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:38:18.403Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:38:18.415Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:38:18.457Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:38:21.302Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:38:21.318Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:38:21.757Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:38:21.768Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:38:21.800Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:38:21.828Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:38:21.859Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:38:21.868Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:38:21.932Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:38:21.953Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:38:24.290Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:38:24.293Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:38:24.445Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:38:24.454Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:38:24.479Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:38:24.496Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:38:24.546Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:38:24.552Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:38:24.607Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:38:24.619Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:38:30.300Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:38:30.304Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:38:30.436Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:38:30.445Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:38:30.449Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:38:30.458Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:38:30.512Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:38:30.517Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:38:30.551Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:38:30.563Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:38:35.025Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:38:35.029Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:38:35.177Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:38:35.187Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:38:35.192Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:38:35.199Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:38:35.215Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:38:35.231Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:38:35.243Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:38:35.258Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:38:46.165Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:38:46.168Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:38:46.300Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:38:46.311Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:38:46.314Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:38:46.324Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:38:46.337Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:38:46.353Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:38:46.400Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:38:46.413Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:39:06.284Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:39:06.293Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:39:06.296Z"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:39:11.171Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:39:11.191Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:39:11.946Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:39:11.963Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:39:12.034Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:39:12.080Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:39:12.086Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:39:12.101Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:39:16.329Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:39:16.343Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:39:16.380Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:39:16.392Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:39:16.397Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:39:16.412Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:39:16.433Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:39:16.461Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:39:16.470Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:39:16.513Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:39:19.463Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:39:19.466Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:39:19.589Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:39:19.595Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:39:19.613Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:39:19.616Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:39:19.669Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:39:19.725Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:39:33.376Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:39:33.381Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:39:33.382Z"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:39:33.492Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:39:33.521Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:39:33.570Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:39:36.450Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:39:36.455Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:39:36.456Z"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:39:36.499Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:39:36.540Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:39:36.575Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:39:41.280Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:39:41.285Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:39:41.286Z"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:39:41.473Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:39:41.495Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:39:41.550Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:39:42.899Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:39:42.948Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:39:42.988Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:39:43.039Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:39:43.049Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:39:43.076Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:39:43.223Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:39:43.245Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:39:43.261Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:39:43.367Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:39:46.122Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:39:46.127Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:39:46.376Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:39:46.384Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:39:46.414Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:39:46.417Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:39:46.431Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:39:46.457Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:39:48.822Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:39:48.831Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:39:48.875Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:39:48.884Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:39:48.888Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:39:48.898Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:39:48.900Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:39:48.917Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:39:48.929Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:39:48.943Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:39:55.101Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:39:55.105Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:39:55.341Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:39:55.369Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:39:55.405Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:39:55.410Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:39:55.427Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:39:55.437Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:40:10.348Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:40:10.367Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:40:16.110Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:41:13.533Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:41:13.543Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:41:13.545Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:41:18.689Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:41:18.694Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:41:18.695Z"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:41:19.579Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:41:19.629Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:41:21.288Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:41:21.303Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:41:21.359Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:41:21.374Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:41:21.378Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:41:21.392Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:41:21.415Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:41:21.429Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:41:21.447Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:41:21.493Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:41:24.520Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:41:24.524Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:41:24.955Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:41:24.987Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:41:25.003Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:41:25.014Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:41:25.031Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:41:25.047Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:41:25.069Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:41:25.085Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:42:25.887Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:42:25.896Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:42:25.897Z"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:42:27.042Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:42:27.082Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:42:27.124Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:42:27.171Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:42:27.177Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:42:27.194Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:42:27.239Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:42:27.277Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:42:27.298Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:42:27.329Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:42:30.163Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:42:30.176Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:42:30.214Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:42:30.227Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:42:30.231Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:42:30.245Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:42:30.247Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:42:30.266Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:42:30.275Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:42:30.297Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:42:48.092Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:42:48.096Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:42:48.372Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:42:48.439Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:42:48.443Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:42:48.459Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:42:48.467Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:42:48.497Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:42:48.552Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:42:48.663Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:42:50.602Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:42:50.614Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:42:52.328Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:42:52.345Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:42:53.629Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:42:53.637Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:42:53.684Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:42:53.694Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:42:53.697Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:42:53.709Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:42:53.712Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:42:53.728Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:42:53.743Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:42:53.756Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:43:51.436Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:43:51.446Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:43:51.447Z"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:43:52.184Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:43:52.202Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:43:52.246Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:43:52.266Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:43:52.271Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:43:52.280Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:43:52.290Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:43:52.324Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:43:52.351Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:43:52.367Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:43:54.588Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:43:54.593Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:43:54.594Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:43:58.494Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:43:58.500Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:43:58.502Z"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:44:01.125Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:44:01.228Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:44:01.298Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:44:01.341Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:44:01.352Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:44:01.374Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:44:01.382Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:44:01.469Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:44:01.507Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:44:01.529Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:44:11.318Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:44:11.328Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:44:11.329Z"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:44:12.161Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:44:12.194Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:44:12.226Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:44:12.258Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:44:12.269Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:44:12.282Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:44:12.312Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:44:12.343Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:44:13.418Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:44:13.432Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:44:14.070Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:44:14.129Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:44:14.143Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:44:14.193Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:44:14.230Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:44:14.273Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:44:14.287Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:44:14.343Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:44:15.751Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:44:15.763Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:44:15.806Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:44:15.818Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:44:15.822Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:44:15.838Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:44:15.853Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:44:15.872Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:44:15.882Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:44:15.922Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:45:34.852Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:45:34.859Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:45:34.859Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:45:38.106Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:45:38.115Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:45:38.116Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:45:42.825Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:45:42.834Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:45:42.835Z"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:45:42.915Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:45:42.942Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:45:42.986Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:45:43.027Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:45:43.043Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:45:43.098Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:45:43.103Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:45:43.168Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:45:43.252Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:45:43.287Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:45:45.198Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:45:45.226Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:45:46.268Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:45:46.302Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:45:47.688Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:45:47.705Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:45:47.755Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:45:47.769Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:45:47.773Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:45:47.790Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:45:47.801Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:45:47.828Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:45:47.837Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:45:47.882Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:48:24.142Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:48:24.150Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:48:24.152Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:48:26.685Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:48:26.693Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:48:26.695Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:48:45.770Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:48:45.777Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:48:45.778Z"}
+{"level":"info","message":"🚀 Green CI Optimizer API server running on port 3001","timestamp":"2026-02-17T09:53:53.583Z"}
+{"level":"info","message":"📊 Dashboard URL: http://localhost:3001","timestamp":"2026-02-17T09:53:53.589Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:3001/","timestamp":"2026-02-17T09:53:53.590Z"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:55:01.552Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/health","timestamp":"2026-02-17T09:55:02.342Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:55:03.444Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:55:03.564Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:55:03.574Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:55:03.602Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:55:03.741Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:55:03.768Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:55:03.823Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:55:03.878Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:55:09.835Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:55:09.876Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:55:09.896Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:55:09.930Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:55:12.428Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:55:12.444Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:55:12.461Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:55:12.531Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:56:13.175Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:56:13.185Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:56:13.208Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:56:13.242Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:56:40.450Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/agents","timestamp":"2026-02-17T09:56:40.467Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:56:40.518Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:56:40.529Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics/summary","timestamp":"2026-02-17T09:56:40.538Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"averageScore":82,"level":"info","message":"Summary calculated","projects":5,"timestamp":"2026-02-17T09:56:40.549Z","totalCO2":"3.735","totalEnergy":"7.843","totalPipelines":30}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:56:40.553Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/metrics","timestamp":"2026-02-17T09:56:40.572Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:56:40.584Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/optimizations","timestamp":"2026-02-17T09:56:40.611Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
